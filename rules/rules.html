@@ -11,20 +11,18 @@
     <link rel="shortcut icon" href="../img/logo.png" type="img/gif">
     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;700&amp;display=swap" rel="stylesheet">
     
-    
-        <!-- معلومات عامة -->
-<meta name="title" content="مقاطعة الفورسيزون | The 4 Season County">
-<meta name="description" content="انضم إلى مجتمع الفورسيزون، أقوى سيرفر حياة واقعية وتمثيل أدوار في العالم العربي.">
+    <!-- معلومات عامة -->
+    <meta name="title" content="مقاطعة الفورسيزون | The 4 Season County">
+    <meta name="description" content="انضم إلى مجتمع الفورسيزون، أقوى سيرفر حياة واقعية وتمثيل أدوار في العالم العربي.">
 
-<!-- Facebook / Discord / Messenger -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://the4season.gg/">
-<meta property="og:title" content="مقاطعة الفورسيزون | The 4 Season County">
-<meta property="og:description" content="انضم إلى مجتمع الفورسيزون، أقوى سيرفر حياة واقعية وتمثيل أدوار في العالم العربي.">
-<meta property="og:image" content="https://the4season.gg/img/logo.png">
+    <!-- Facebook / Discord / Messenger -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="  https://the4season.gg/  ">
+    <meta property="og:title" content="مقاطعة الفورسيزون | The 4 Season County">
+    <meta property="og:description" content="انضم إلى مجتمع الفورسيزون، أقوى سيرفر حياة واقعية وتمثيل أدوار في العالم العربي.">
+    <meta property="og:image" content="https://the4season.gg/img/logo.png  ">
     
     <style>
-
       .video-container {
         position: absolute;
         top: 0;
@@ -56,7 +54,6 @@
   </head>
 <body>
 
-
   <div class="planet-background">
     <!-- الكواكب -->
     <div class="planet planet1"></div>
@@ -70,30 +67,31 @@
     <img src="../img/logo.png" class="floating-logo logo3" alt="شعار المقاطعة">
 
     <!-- نجوم زرقاء -->
-<div class="blue-star star1"></div>
-<div class="blue-star star2"></div>
-<div class="blue-star star3"></div>
-<div class="blue-star star4"></div>
-<div class="blue-star star5"></div>
-<canvas id="particles-bg"></canvas>
+    <div class="blue-star star1"></div>
+    <div class="blue-star star2"></div>
+    <div class="blue-star star3"></div>
+    <div class="blue-star star4"></div>
+    <div class="blue-star star5"></div>
+    <canvas id="particles-bg"></canvas>
   </div>
 
-<!-- شريط التنقل الجديد -->
-<header>
+  <!-- شريط التنقل الجديد -->
+  <header>
     <nav class="navbar">
         <div class="logo">
             <a href="../index.html"><img src="../img/logo.png" alt="شعار الموقع"></a>
         </div>
         <ul class="nav-links">
           <li><a href="../index.html">الرئيسية</a></li>
-          <li><a href="../store/store.html"class="activeKK">المتجر</a></li>
+          <li><a href="../store/store.html" class="activeKK">المتجر</a></li>
           <li><a href="../guide/guide.html">دليل المقاطعة</a></li>
-          <li><a href="rules.html"class="active">القوانين</a></li>
+          <li><a href="rules.html" class="active">القوانين</a></li>
           <li><a href="../jobs/jobs.html">تقديم الوظائف</a></li>
         </ul>
         <div class="menu-toggle" onclick="toggleMenu()">&#9776;</div>
     </nav>
-</header>
+  </header>
+
   <!-- شريط التنقل الجانبي -->
   <nav class="side-nav">
     <ul>
@@ -108,154 +106,808 @@
     </ul>
   </nav>
 
-    <section class="hero">
-      <div id="section0" class="video-container">
-        <iframe
-          src="https://www.youtube.com/embed/VLkOQJoeGPE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playlist=VLkOQJoeGPE"
-          frameborder="0"
-          allow="autoplay"
-          allowfullscreen
-        ></iframe>
-      </div>
-    
-      <div class="overlay"></div>
-    
-      <div class="hero-content">
-        <h1>The 4 Season Country  <br>مجتمع مقاطعة الفورسيزون </h1>
-        <p>قوانين مقاطعة الفورسيزون</p>
+  <section class="hero">
+    <div id="section0" class="video-container">
+      <iframe
+        src="https://www.youtube.com/embed/VLkOQJoeGPE?autoplay=1&amp;mute=1&amp;loop=1&amp;controls=0&amp;showinfo=0&amp;rel=0&amp;modestbranding=1&amp;playlist=VLkOQJoeGPE"
+        frameborder="0"
+        allow="autoplay"
+        allowfullscreen
+      ></iframe>
+    </div>
+  
+    <div class="overlay"></div>
+  
+    <div class="hero-content">
+      <h1>The 4 Season Country  <br>مجتمع مقاطعة الفورسيزون </h1>
+      <p>قوانين مقاطعة الفورسيزون</p>
+    </div>
+  </section>
+
+  <!-- أقسام القوانين -->
+  <div id="section1" class="violation-category">
+    <h3 class="category-title">قوانين المقاطعة</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-county"></tbody>
+    </table>
   </div>
-    </section>
-
   
-  </section>
-    <div id="section1" class="violation-category">
-      <h3 class="category-title">قوانين المقاطعة</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-county"></tbody>
-      </table>
-    </div>
-    
-    <div id="section2" class="violation-category">
-      <h3 class="category-title">قوانين التهريب</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-smuggling"></tbody>
-      </table>
-    </div>
+  <div id="section2" class="violation-category">
+    <h3 class="category-title">قوانين التهريب</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-smuggling"></tbody>
+    </table>
+  </div>
 
-    <div id="section3" class="violation-category">
-      <h3 class="category-title">قوانين الاجرام</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-crime"></tbody>
-      </table>
-    </div>
+  <div id="section3" class="violation-category">
+    <h3 class="category-title">قوانين الاجرام</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-crime"></tbody>
+    </table>
+  </div>
 
-    <div id="section4" class="violation-category">
-      <h3 class="category-title">قوانين المشاركة</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-participation"></tbody>
-      </table>
-    </div>
+  <div id="section4" class="violation-category">
+    <h3 class="category-title">قوانين المشاركة</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-participation"></tbody>
+    </table>
+  </div>
 
-    <div id="section5" class="violation-category">
-      <h3 class="category-title">قوانين الميناء</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-port"></tbody>
-      </table>
-    </div>
+  <div id="section5" class="violation-category">
+    <h3 class="category-title">قوانين الميناء</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-port"></tbody>
+    </table>
+  </div>
 
-    <div id="section6" class="violation-category">
-      <h3 class="category-title">قوانين صناع المحتوى</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-streamer"></tbody>
-      </table>
-    </div>
+  <div id="section6" class="violation-category">
+    <h3 class="category-title">قوانين صناع المحتوى</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-streamer"></tbody>
+    </table>
+  </div>
 
-    <div id="section7" class="violation-category">
-      <h3 class="category-title">قوانين الدسكورد</h3>
-      <table class="violation-table">
-        <thead>
-          <tr>
-            <th>رقم</th>
-            <th>الوصف</th>
-          </tr>
-        </thead>
-        <tbody id="laws-body-discord"></tbody>
-      </table>
-    </div>
-
-  </section>
-    <!-- كرر نفس الصيغة لبقية الأقسام الثابتة -->
-    
-  
-  
+  <div id="section7" class="violation-category">
+    <h3 class="category-title">قوانين الدسكورد</h3>
+    <table class="violation-table">
+      <thead>
+        <tr>
+          <th>رقم</th>
+          <th>الوصف</th>
+        </tr>
+      </thead>
+      <tbody id="laws-body-discord"></tbody>
+    </table>
+  </div>
 
   <footer>
     <p>&copy; 2025 جميع الحقوق محفوظة | مقاطعة الفورسيزون</p>
-</footer>
-
+  </footer>
 
   <script src="../script.js"></script>
   <button id="scrollTopBtn" title="العودة للأعلى">
     <i class="fas fa-arrow-up"></i>
   </button>
 
+  <!-- البيانات مضمنة هنا -->
   <script>
-const SHEET_LAWS_URL = "https://opensheet.elk.sh/1hABGYrUYpQyrk80ozDuwCJBfHqrPRhVwSJnzcB5HUsY/Sheet2";
+    // البيانات المضمنة مباشرة من الملف
+    const localLawsData = [
+      {
+        "rule_description": "يجب أن يكون اسمك واقعيًا",
+        "rule_number": "1",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يجب أن يكون اسمك في الهوية اسم أول وثاني عربي واقعي، وغير ذلك سيتم محاسبتك رقابيًا",
+        "rule_number": "2",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع طلب المطاردة من العساكر أو الترصد لقتلهم دون سبب",
+        "rule_number": "3",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع التواصل الغير شرعي داخل المدينة، يجب استخدام موجة الراديو فقط (العقوبة: سجن 60 شهر)",
+        "rule_number": "4",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع الترصد للستريمرز عن طريق البث المباشر",
+        "rule_number": "5",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع السب والقذف والشتم بجميع أنواعه",
+        "rule_number": "6",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع التحدث في الراديو عند تقييد اليدين أو أثناء الغوص",
+        "rule_number": "7",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع الترصد للوظائف الحكومية لقتلهم، ويجب أن يكون هناك سبب",
+        "rule_number": "8",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع سرقة مركبات الوظائف المعتمدة الحكومية وغير الحكومية",
+        "rule_number": "9",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يحق للرهينة الهروب في حال كان المجرم غافلًا ولم يُخرج سلاحه",
+        "rule_number": "10",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يجب الاحترام المتبادل والالتزام بالتمثيل الواقعي والاحترافي",
+        "rule_number": "11",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع المقاومة بعد الإنعاش",
+        "rule_number": "12",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع إطلاق النار بوجود الهلال الأحمر",
+        "rule_number": "13",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع قتل أو تهديد أو خطف موظفين الهلال الأحمر وموظفي كراج الميكانيكي",
+        "rule_number": "14",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع الركوب في الشنطة في حال كنت مواطنًا أو مجرمًا",
+        "rule_number": "15",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع استخدام نقطة الإيم أو مواد الغش (عقوبتها باند نهائي)",
+        "rule_number": "16",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع استخدام اليد للمركبات أو الأسلحة بأي شكل من الأشكال",
+        "rule_number": "17",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع طلب الإنعاش عبر تكت الدعم الفني أو الرقابة، يجب انتظار الوحدة الإسعافية",
+        "rule_number": "18",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع مناقشة المواضيع الدينية أو السياسية أو العرقية داخل أو خارج المقاطعة",
+        "rule_number": "19",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع أثناء المطاردة صعود الجبال بمركبة غير مخصصة",
+        "rule_number": "20",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع أثناء المطاردة دخول المنزل",
+        "rule_number": "21",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع أثناء المطاردة تخزين المركبة",
+        "rule_number": "22",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع أثناء المطاردة الصدم غير الواقعي",
+        "rule_number": "23",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع أثناء المطاردة القيادة بشكل غير واقعي",
+        "rule_number": "24",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع الهروب عن طريق البحر بدون قارب مجهز",
+        "rule_number": "25",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع القيادة غير الواقعية مثل: طلوع أوفرود بمركبة غير مخصصة",
+        "rule_number": "26",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع القيادة غير الواقعية مثل: الصدم العشوائي",
+        "rule_number": "27",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع القيادة غير الواقعية بشكل عام",
+        "rule_number": "28",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "المستشفيات ومراكز الشرطة وأمن المنشآت تعتبر مناطق آمنة",
+        "rule_number": "29",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "معرض المركبات والشاحنات يعتبر منطقة آمنة",
+        "rule_number": "30",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "مركز التوظيف واستخراج الرخص يعتبر منطقة آمنة",
+        "rule_number": "31",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "جميع كراجات المركبات والشاحنات تعتبر مناطق آمنة",
+        "rule_number": "32",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "معرض المركبات المستعملة يعتبر منطقة آمنة",
+        "rule_number": "33",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "السجن والساحة المقابلة له تعتبر منطقة آمنة",
+        "rule_number": "34",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "مناطق العمل والتصنيع تعتبر مناطق آمنة",
+        "rule_number": "35",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "الإجرام في المناطق الآمنة يعاقب بالسجن 120 شهر + سحب السلاح + غرامة رقابية 500 ألف مع تدبيل العقوبة في حال التكرار",
+        "rule_number": "36",
+        "group": "قوانين المقاطعة"
+      },
+      {
+        "rule_description": "يمنع تعمد قتل رجل الأمن والمنشآت بطريقة عشوائية، ويُكتفى بإسقاط من يعترض طريقك أو يحاول اعتقالك",
+        "rule_number": "1",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "في حال استحالة الهروب، لا يمنع تسليم نفسك حفاظًا على حياتك وخبرتك",
+        "rule_number": "2",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "يمنع استخدام الأسلحة من القارب ضد أي شخص على رصيف الميناء (ينطبق على الأمن والمهربين)",
+        "rule_number": "3",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "في حال هروب المهرب ورفض الاستسلام أو عدم الاستجابة للطلقات التحذيرية، يحق للأمن إسقاطه فورًا",
+        "rule_number": "4",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "يمنع على الأمن مواجهة المهربين إذا كان عددهم 3 أو أكثر وكان عدد الأمن أقل من 3 في موقع التهريب",
+        "rule_number": "5",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "مسؤولية الأمن التأكد من عدد المهربين قبل بدء السيناريو",
+        "rule_number": "6",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "يمنع دخول الميناء بدون ممنوعات بهدف إطلاق النار أو حماية صديق، ويترتب عليها محاسبة شديدة جدًا",
+        "rule_number": "7",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "في حال تم رفع استنفار أمني، يمنع دخول الميناء ويجب المغادرة فورًا",
+        "rule_number": "8",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "إذا لم يتم كشفك من قبل رجال أمن المنشآت، يمنع كشف نفسك بهدف تبادل إطلاق النار",
+        "rule_number": "9",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "يمنع تعريض حياة المواطنين والتجار للخطر أثناء التهريب (يمنع قتل المواطنين دون هدف ضمن السيناريو)",
+        "rule_number": "10",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "يمنع الوقوف خلف الشبك داخل الميناء، ويتم تحذيرك لمدة 5 ثواني من العسكري، وبعدها يحق له القبض عليك (السلم مسموح)",
+        "rule_number": "11",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "الفصل أثناء التهريب يعرضك لعقوبات شديدة، وأدناها حظر لمدة 7 أيام",
+        "rule_number": "12",
+        "group": "قوانين التهريب"
+      },
+      {
+        "rule_description": "ممنوع طلب إزالة الدوريات ورجال الأمن من الموقع وهذا الطلب يعتبر تخريب التمثيل.",
+        "rule_number": "1",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يجب على الجميع التمثيل بجدية في السرقات وعدم التراخي بين المجرمين ورجال الأمن.",
+        "rule_number": "2",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "ممنوع طلب التجول خارج مكان السرقة ويعتبر تخريب تمثيل.",
+        "rule_number": "3",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "إذا تم علاجك في الموقع بعد النزيف يمكنك تذكر الأحداث، إلا إذا تم نقلك للمستشفى.",
+        "rule_number": "4",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع تهديد أو خطف المواطن بدون بدء حوار معه.",
+        "rule_number": "5",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع قتل أو اختطاف المفاوض في السيناريو.",
+        "rule_number": "6",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع تهديد رجل الأمن بهدف استخدامه في السرقة، إلا في سيناريوهات مثل فك زميلك أو سيناريو بسيط.",
+        "rule_number": "7",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع حمل الرهينة في وضع التهديد داخل المركبة.",
+        "rule_number": "8",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع دخول مكان السرقة إلا بعد مغادرة الأمن للموقع.",
+        "rule_number": "9",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "إذا لم ترغب بالتفاوض يجب تحذير المفاوض ومنحه مهلة معقولة للانسحاب.",
+        "rule_number": "10",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع القتل بدون تهديد، يجب إعطاء تحذيرات أولاً، ثم يحق لك إسقاطه.",
+        "rule_number": "11",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع تعجيز الأمن بطلبات غير منطقية لخطفك رهينة.",
+        "rule_number": "12",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "بعد قتل شخص يجب عليك تمثيل الهروب مباشرة وعدم انتظار الأمن.",
+        "rule_number": "13",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع إطلاق النار أو التهديد بوجود الهلال الأحمر أو الميكانيكي.",
+        "rule_number": "14",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يسمح بالصعود أوفرود أثناء الهروب فقط بسيارات رباعية الدفع، ويمنع استخدام مركبات غير مخصصة.",
+        "rule_number": "15",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يسمح بالسرقة دون رهينة، ويمنع تعجيز المتطلبات. عند التعجيز يحق للأمن تفشيل التفاوض ومنحك 10 ثوانٍ للاستسلام.",
+        "rule_number": "16",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "الحد الأقصى للإجرام هو 5.",
+        "rule_number": "17",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع جلب رهينة يكون صديقك ضمن التمثيل.",
+        "rule_number": "18",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع الخروج من السيرفر أثناء السيناريو (عقوبتها سجن 1000 شهر أو أكثر).",
+        "rule_number": "19",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع سرقة مركبات العاملين في الوظائف العامة مثل الدواجن والأخشاب.",
+        "rule_number": "20",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "إذا كانت لديك رهينتان أو أكثر لا يحق لك طلب أكثر من متطلب واحد.",
+        "rule_number": "21",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع التواصل غير الشرعي أثناء السيناريو، يُسمح فقط بالراديو.",
+        "rule_number": "22",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يجب أن تكون المركبة المستخدمة في السرقة مسجلة باسم أحد المشاركين.",
+        "rule_number": "23",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع قتل رجل الأمن أثناء تعامله مع مجرم وتخريب السيناريو.",
+        "rule_number": "24",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "عند تهديد مواطن يجب إعطاؤه مهلة 7 ثوانٍ للتجاوب، بعدها يمكنك قتله.",
+        "rule_number": "25",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة البنك الفرعي: الحد الأدنى 3 مجرمين، الحد الأقصى 4 (+1 تدخل خارجي)، الحد الأقصى للعساكر 6.",
+        "rule_number": "26",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة البنك المركزي: الحد الأدنى 6 مجرمين، الحد الأقصى 8 (+1 تدخل خارجي)، الحد الأقصى للعساكر 10.",
+        "rule_number": "27",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة المجوهرات: الحد الأدنى 2 مجرمين، الحد الأقصى 4 (+1 تدخل خارجي)، الحد الأقصى للعساكر 6.",
+        "rule_number": "28",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة البقالة والبار: الحد الأدنى 2، الحد الأقصى 3 (+1 تدخل خارجي)، الحد الأقصى للعساكر 5.",
+        "rule_number": "29",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة متجر الأسلحة: الحد الأدنى 2، الحد الأقصى 3 (+1 تدخل خارجي)، الحد الأقصى للعساكر 5.",
+        "rule_number": "30",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة الكهرباء (تحتاج عُدة من البقالة): الحد الأدنى 3، الحد الأقصى 5، الحد الأقصى للعساكر 6.",
+        "rule_number": "31",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة خزنة الشرطة (تحتاج عُدة من البقالة): الحد الأدنى 4، الحد الأقصى 6، الحد الأقصى للعساكر 7.",
+        "rule_number": "32",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة المستودعات الطبية (تحتاج عُدة من البقالة): الحد الأدنى 4، الحد الأقصى 6، الحد الأقصى للعساكر 7.",
+        "rule_number": "33",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع استخدام الدباب والسيارات (البوقاتي + الفراري + اللامبورغيني + جي تي آر المتجر) في السرقات.",
+        "rule_number": "34",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يسمح الهروب من موقع السرقة بعد انتظار رجال الأمن لمدة 10 دقائق.",
+        "rule_number": "35",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة المنازل: يجب تمثيل الهروب وعدم العودة للمنزل بعد الدخول.",
+        "rule_number": "36",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يسمح بسرقة المنازل أثناء منع الإجرام، ولكن يُمنع استخدام الأسلحة بجميع أشكالها.",
+        "rule_number": "37",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يسمح بإطلاق النار في حال السماح بالإجرام في المنطقة ووجود مواجهة مباشرة.",
+        "rule_number": "38",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "سرقة المنازل: الحد الأدنى شخص واحد، الحد الأقصى شخصين.",
+        "rule_number": "39",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "في حال الاستسلام دون مقاومة، يحق للعسكري سحب المضبوطات فقط وتحويلك للسجن.",
+        "rule_number": "40",
+        "group": "قوانين الاجرام"
+      },
+      {
+        "rule_description": "يمنع نشر فيديوهات أو صور مخلة للآداب.",
+        "rule_number": "1",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع نشر فيديوهات أو صور من خارج مقاطعة الفورسيزون.",
+        "rule_number": "2",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع نشر فيديوهات أو صور بهدف الاستهزاء على أحد الأشخاص أو القطاعات.",
+        "rule_number": "3",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع إرسال أي مشاركة تخص شكوى أو خطأ برمجي.",
+        "rule_number": "4",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع الكتابة أو التحدث في رومات المشاركة.",
+        "rule_number": "5",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع التطرق للسياسة أو الدين أو العنصرية.",
+        "rule_number": "6",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يمنع نشر ما يعتبر إهانة للوظائف العسكرية.",
+        "rule_number": "7",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "الروم مخصص لمشاركة مقطع مصور في مقاطعة الفورسيزون فقط.",
+        "rule_number": "8",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يجب عليك إبراز الإبداع فيما يخص مقاطعة الفورسيزون.",
+        "rule_number": "9",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "المشاركة تعني تقديم شيء جميل يبرز جمال مقاطعة الفورسيزون.",
+        "rule_number": "10",
+        "group": "قوانين المشاركة"
+      },
+      {
+        "rule_description": "يجب على جميع المواطنين عند الوقوف والانتظار أمام بوابة ميناء الفورسيزون الرئيسي الالتزام بمسافة آمنة بين كل مركبة.",
+        "rule_number": "1",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "في حال دخول مواطن غير قانوني، يجب إبلاغ رجال أمن المنشآت، وإذا لم يتعاون وأحدث فوضى، يحق لرجل الأمن سجنه بتهمة عدم الانصياع للأوامر.",
+        "rule_number": "2",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "في حال حدوث تصادم متعمد أو غير متعمد، يحق لرجل الأمن مخالفتك وإرجاعك لآخر الصف حسب تقديره، مع وجوب ترك مسافة لا تقل عن 5 أمتار بين المركبات.",
+        "rule_number": "3",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "دخولك بعكس السير من بوابة الخروج يعطي الحق لرجل الأمن بإطلاق النار على الكفرات، ويمكن اعتبارك مخالف قانوني واتخاذ إجراءات من الإدارة.",
+        "rule_number": "4",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "لا يحق لك إدخال راكب معك، يجب أن يكون لكل شخص مركبته الخاصة أو مركبة مستأجرة من الشركة.",
+        "rule_number": "5",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "يجب عليك تنفيذ أوامر رجال الأمن وعدم الدخول في نقاشات، وفي حال المخالفة قد تتعرض للسجن بتهمة إزعاج السلطات وعدم الانصياع.",
+        "rule_number": "6",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "يجب الالتزام بقوانين التهريب وأمن المنشآت لتجنب المحاسبة الشديدة.",
+        "rule_number": "7",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "سيتم تشديد العقوبات على المخالفين والمتهاونين.",
+        "rule_number": "8",
+        "group": "قوانين الميناء"
+      },
+      {
+        "rule_description": "يمنع التطرق بالكلام المسيء للإدارة أو لسيرفر مقاطعة الفورسيزون بأي شكل من الأشكال.",
+        "rule_number": "1",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "في حال رصدك لمخالف داخل السيرفر، يمنع الخروج عن التمثيل أو طلب الرقابة أثناء البث، ويجب فتح تذكرة بعد البث.",
+        "rule_number": "2",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "يمنع سب أو شتم لاعبي السيرفر عبر البث، ومن يخالف تُسحب منه رتبة ستريمر ويُحاسب من الرقابة والتفتيش.",
+        "rule_number": "3",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "في حال مخالفة قوانين المقاطعة، يتم سحب رتبة ستريمر مقاطعة الفورسيزون تلقائيًا.",
+        "rule_number": "4",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "يمنع ذكر اسم أي مدينة أخرى أثناء البث داخل المقاطعة، والمخالفة تؤدي إلى حظر نهائي.",
+        "rule_number": "5",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "يجب أن يتضمن عنوان البث اسم (مقاطعة الفورسيزون).",
+        "rule_number": "6",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "في حال تم إعفاؤك من رتبة صانع محتوى، يمنع التقديم مرة أخرى إلا بعد مرور شهر.",
+        "rule_number": "7",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "رفع مقطعين عن مقاطعة الفورسيزون شرط أساسي لإعادة التقديم.",
+        "rule_number": "8",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "بالنسبة لتويتشر أو تيك توكر: يجب البث مرتين خلال أسبوعين، وإلا تُسحب الرتب (صانع محتوى، تويتشر، تيك توكر).",
+        "rule_number": "9",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "بالنسبة لليوتيوبر: يجب نشر مقطع خلال أسبوعين، وإلا تُسحب رتب (صانع محتوى، يوتيوبر).",
+        "rule_number": "10",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "يجب احترام الجميع وتمثيل الشخصيات بشكل سليم وإظهار المقاطعة بصورة لائقة.",
+        "rule_number": "11",
+        "group": "قوانين الستريمر"
+      },
+      {
+        "rule_description": "يمنع نشر الروابط أو الاختصارات أو الرموز التي تهدف إلى ترويج سيرفرات أخرى.",
+        "rule_number": "1",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع وضع أسماء خادشة للحياء أو الذوق العام.",
+        "rule_number": "2",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع إرسال الصور المخلة بالآداب.",
+        "rule_number": "3",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع الإساءة إلى أعضاء المقاطعة.",
+        "rule_number": "4",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع مناقشة المواضيع الدينية أو السياسية أو العرقية في الديسكورد.",
+        "rule_number": "5",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع السخرية والاستهزاء بالآخرين، وعقوبتها قد تصل للحرمان من الكتابة أو الباند.",
+        "rule_number": "6",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يُسمح بالتواصل مع إدارة الرقابة والتفتيش فقط عبر التكت، ويُمنع المنشن.",
+        "rule_number": "7",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع استخدام كروت الصوت أو برامج تعديل الصوت في الرومات الصوتية.",
+        "rule_number": "8",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "الاحترام مبدأ يجب على الجميع الالتزام به.",
+        "rule_number": "9",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع استخدام أسماء غير لائقة.",
+        "rule_number": "10",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع الخوض أو التطرق للمواضيع الدينية أو السياسية بأي شكل.",
+        "rule_number": "11",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع انتحال الشخصيات الإدارية، والمخالفة تؤدي إلى باند نهائي.",
+        "rule_number": "12",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يمنع نشر أي محتوى مخل بالآداب أو خادش للحياء، والمخالفة تؤدي لحظر نهائي.",
+        "rule_number": "13",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "يُفضّل وجود مايك واضح وغير مزعج، وفي حال الإزعاج سيتم استبعادك من الروم حتى يتم حل المشكلة.",
+        "rule_number": "14",
+        "group": "قوانين الدسكورد"
+      },
+      {
+        "rule_description": "السبام قد يؤدي إلى حظرك من الكتابة أو الحديث.",
+        "rule_number": "15",
+        "group": "قوانين الدسكورد"
+      }
+    ];
 
-const lawSections = {
-  "قوانين المقاطعة": "laws-body-county",
-  "قوانين التهريب": "laws-body-smuggling",
-  "قوانين الاجرام": "laws-body-crime",
-  "قوانين المشاركة": "laws-body-participation",
-  "قوانين الميناء": "laws-body-port",
-  "قوانين الستريمر": "laws-body-streamer",
-  "قوانين الدسكورد": "laws-body-discord"
-};
+    // ربط المجموعات بأسماء العناصر
+    const lawSections = {
+      "قوانين المقاطعة": "laws-body-county",
+      "قوانين التهريب": "laws-body-smuggling",
+      "قوانين الاجرام": "laws-body-crime",
+      "قوانين المشاركة": "laws-body-participation",
+      "قوانين الميناء": "laws-body-port",
+      "قوانين الستريمر": "laws-body-streamer",
+      "قوانين الدسكورد": "laws-body-discord"
+    };
 
-fetch(SHEET_LAWS_URL)
-  .then(res => res.json())
-  .then(data => {
+    // عرض القوانين مباشرة
     Object.entries(lawSections).forEach(([group, id]) => {
       const tbody = document.getElementById(id);
       if (!tbody) return;
 
-      const filtered = data.filter(row => row.group === group);
+      const filtered = localLawsData.filter(row => row.group === group);
 
       tbody.innerHTML = filtered.map(row => `
         <tr>
@@ -264,36 +916,26 @@ fetch(SHEET_LAWS_URL)
         </tr>
       `).join('');
     });
-  });
-</script>
+  </script>
 
-
-
+  <!-- إظهار زر العودة للأعلى -->
   <script>
-      
+    window.onscroll = function () {
+      const btn = document.getElementById("scrollTopBtn");
+      btn.style.display = window.scrollY > 300 ? "flex" : "none";
+    };
 
-    // إظهار الزر عند التمرير
-window.onscroll = function () {
-const btn = document.getElementById("scrollTopBtn");
-btn.style.display = window.scrollY > 300 ? "flex" : "none";
-};
-
-// الرجوع للأعلى بسلاسة
-document.getElementById("scrollTopBtn").onclick = () => {
-window.scrollTo({ top: 0, behavior: "smooth" });
-};
-
+    document.getElementById("scrollTopBtn").onclick = () => {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    };
   </script>
   
   <script>
-function toggleMenu() {
-    const navLinks = document.querySelector('.nav-links');
-    navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-}
-</script>
+    function toggleMenu() {
+      const navLinks = document.querySelector('.nav-links');
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    }
+  </script>
 
 </body>
-
-
-<!-- Mirrored from boleto.gg/rules/rules.html by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 30 Jul 2025 20:50:15 GMT -->
 </html>
